@@ -1,5 +1,6 @@
 import "./App.css";
 import Features from "./components/Features/Features";
+import Footer from "./components/Footer/Footer";
 import FreeProducts from "./components/FreeProducts/FreeProducts";
 import Navbar from "./components/Navbar/Navbar";
 import Results from "./components/Results/Results";
@@ -12,9 +13,14 @@ const App = () => {
         <Results />
       </header>
       <main>
-        <Features />
+        <div className="features">
+          <Features />
+        </div>
         <FreeProducts />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };
