@@ -49,12 +49,13 @@ form * {
 form label {
   line-height: 1.5rem;
   color: #4d4d4d;
+  margin-bottom: 0.5rem;
 }
 
 form .clear {
   position: absolute;
   right: 0.5rem;
-  top: 2rem;
+  top: 2.5rem;
   cursor: pointer;
 }
 
@@ -104,6 +105,8 @@ form input[type="submit"] {
   border: 1px solid #146eb4;
   border-radius: 0.25rem;
   padding: 0.25rem 1rem;
+
+  cursor: pointer;
 }
 
 .slogans {
