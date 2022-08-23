@@ -1,0 +1,12 @@
+.card {
+  background-color: #f2f2f2;
+  border: 0.25rem;
+  width: 22rem;
+  display: flex;
+  align-items: center;
+
+  padding: 0.5rem 1rem;
+
+  line-height: 1.375rem;
+  color: #1a181e;
+}

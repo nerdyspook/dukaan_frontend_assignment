@@ -1,0 +1,155 @@
+.results {
+  margin-top: 2.875rem;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+
+  box-shadow: 0px 0px 10px 1px rgba(26, 24, 30, 0.06);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(26, 24, 30, 0.06);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(26, 24, 30, 0.06);
+}
+
+.top,
+.center,
+.bottom {
+  max-width: 46rem;
+  margin: 3rem auto;
+  padding-top: 3rem;
+}
+
+.heading {
+  font-family: "Galano Grotesque SemiBold";
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+  letter-spacing: -0.04rem;
+  color: #1a181e;
+  margin-bottom: 1rem;
+}
+
+.top p {
+  margin-bottom: 2rem;
+
+  color: #4d4d4d;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+/* ================== Form ================ */
+
+form {
+  display: inline-block;
+  position: relative;
+}
+
+form * {
+  display: block;
+}
+
+form label {
+  line-height: 1.5rem;
+  color: #4d4d4d;
+}
+
+form .clear {
+  position: absolute;
+  right: 0.5rem;
+  top: 2rem;
+  cursor: pointer;
+}
+
+form input[type="text"] {
+  border: 1px solid #d9d9d9;
+  height: 2.25rem;
+  width: 18rem;
+  padding: 0 1.75rem 0 0.75rem;
+  margin-bottom: 2rem;
+}
+
+form input[type="submit"] {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  background-color: #146eb4;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+
+  cursor: pointer;
+}
+
+/* ====================== Center Section ====================== */
+.center_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.75rem;
+}
+
+.results_heading {
+  padding-top: 1rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.center_top button {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+
+  background-color: transparent;
+  color: #146eb4;
+  border: 1px solid #146eb4;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1rem;
+}
+
+.slogans {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.center,
+.bottom {
+  border-top: 1px solid #d9d9d9;
+}
+
+/* ===================== Bottom Section =================== */
+
+.bottom {
+  padding-bottom: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pages,
+.prev,
+.next {
+  color: #146eb4;
+  cursor: pointer;
+}
+
+.prev_arrow {
+  transform: rotate(-180deg);
+}
+
+.prev,
+.next {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+
+  background: transparent;
+  border: none;
+}
+
+.hidden {
+  visibility: hidden;
+}

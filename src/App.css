@@ -16,6 +16,10 @@ header {
   height: 100%;
 }
 
+.results {
+  color: #4d4d4d;
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     padding: 0 10px;

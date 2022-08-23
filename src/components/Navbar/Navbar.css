@@ -1,3 +1,7 @@
+.navbar {
+  max-height: 5.5rem;
+}
+
 .navbar.flex {
   justify-content: space-between;
 }
