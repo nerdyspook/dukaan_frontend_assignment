@@ -15,7 +15,7 @@ const freeProducts = [
 
   {
     image: terms,
-    title: "Terms &amp; Conditions Generator",
+    title: "Terms & Conditions Generator",
     details:
       "Stock your store with 100s of products and start selling to customers in minutes, without the hassle of inventory or packaging.",
   },
