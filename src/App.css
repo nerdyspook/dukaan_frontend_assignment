@@ -20,6 +20,12 @@ header {
   color: #4d4d4d;
 }
 
+main {
+  background: rgba(20, 110, 180, 0.05);
+  height: 20.75rem;
+  margin: 85rem 0 5rem;
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     padding: 0 10px;
