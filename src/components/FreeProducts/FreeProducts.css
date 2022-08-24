@@ -12,3 +12,13 @@
   flex-wrap: wrap;
   gap: 2rem;
 }
+
+@media screen and (max-width: 755.5px) {
+  .free_products h2.heading {
+    text-align: center;
+  }
+
+  .products {
+    justify-content: center;
+  }
+}

@@ -1,6 +1,14 @@
+:root {
+  --primary-color: #146eb4;
+  --primary-color-faded: rgba(20, 110, 180, 0.05);
+  --text-color: #4d4d4d;
+  --white-color: #ffffff;
+  --black-color: #1a181e;
+}
+
 header {
-  background-color: hsl(206, 80%, 39%);
-  color: #ffffff;
+  background-color: var(--primary-color);
+  color: var(--white-color);
   height: 20.5rem;
 }
 
@@ -17,7 +25,7 @@ header {
 }
 
 .results {
-  color: #4d4d4d;
+  color: var(--text-color);
 }
 
 main {
@@ -25,17 +33,39 @@ main {
 }
 
 .features {
-  background: rgba(20, 110, 180, 0.05);
+  background: var(--primary-color-faded);
   height: 20.75rem;
+}
+
+@media screen and (max-width: 739.5px) {
+  main {
+    margin: 115rem 0 2rem;
+  }
+
+  .features {
+    height: 60rem;
+  }
+
+  .main_features {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 footer {
   height: 17.75rem;
-  background-color: #1a181e;
+  background-color: var(--black-color);
 }
 
 @media screen and (max-width: 1024px) {
   .container {
     padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  footer {
+    height: 30rem;
   }
 }

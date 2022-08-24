@@ -5,7 +5,7 @@ import "./Features.css";
 
 const Features = () => {
   return (
-    <div className="container flex">
+    <div className="main_features container flex">
       <div className="feature">
         <SearchIcon className="icon" />
         <h4>Search</h4>

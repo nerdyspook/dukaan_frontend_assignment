@@ -1,29 +1,40 @@
+import { useState } from "react";
 import { ReactComponent as Clear } from "../../assets/images/cross.svg";
 import { ReactComponent as Arrow } from "../../assets/images/arrow.svg";
 import SloganCard from "../SloganCard/SloganCard";
 import "./Results.css";
 
+const sloganResults = [
+  `There is no Sore it will Not Heal, No cool it will not Subdue.`,
+  `coziness building for tomorrow`,
+  `There is no Sore it will Not Heal, No cool it will not Subdue.`,
+  `Review the facts cool is the best.`,
+  `There is no Sore it will Not Heal, No cool it will not Subdue.`,
+  `coziness building for tomorrow`,
+  `There is no Sore it will Not Heal, No cool it will not Subdue.`,
+  `Review the facts cool is the best.`,
+  `There is no Sore it will Not Heal, No cool it will not Subdue.`,
+  `coziness building for tomorrow`,
+  `There is no Sore it will Not Heal, No cool it will not Subdue.`,
+  `Review the facts cool is the best.`,
+  `There is no Sore it will Not Heal, No cool it will not Subdue.`,
+  `coziness building for tomorrow`,
+  `There is no Sore it will Not Heal, No cool it will not Subdue.`,
+  `Review the facts cool is the best.`,
+  `There is no Sore it will Not Heal, No cool it will not Subdue.`,
+  `Review the facts cool is the best.`,
+];
+
 const Results = () => {
-  const sloganResults = [
-    `There is no Sore it will Not Heal, No cool it will not Subdue.`,
-    `coziness building for tomorrow`,
-    `There is no Sore it will Not Heal, No cool it will not Subdue.`,
-    `Review the facts cool is the best.`,
-    `There is no Sore it will Not Heal, No cool it will not Subdue.`,
-    `coziness building for tomorrow`,
-    `There is no Sore it will Not Heal, No cool it will not Subdue.`,
-    `Review the facts cool is the best.`,
-    `There is no Sore it will Not Heal, No cool it will not Subdue.`,
-    `coziness building for tomorrow`,
-    `There is no Sore it will Not Heal, No cool it will not Subdue.`,
-    `Review the facts cool is the best.`,
-    `There is no Sore it will Not Heal, No cool it will not Subdue.`,
-    `coziness building for tomorrow`,
-    `There is no Sore it will Not Heal, No cool it will not Subdue.`,
-    `Review the facts cool is the best.`,
-    `There is no Sore it will Not Heal, No cool it will not Subdue.`,
-    `Review the facts cool is the best.`,
-  ];
+  const [inputWord, setInputWord] = useState();
+
+  const handleInputChange = (e) => {
+    setInputWord(e.target.value);
+  };
+
+  const handleClear = () => {
+    setInputWord("");
+  };
 
   return (
     <div className="results container">
@@ -36,8 +47,13 @@ const Results = () => {
 
         <form action="">
           <label htmlFor="word-input">Word for your slogan</label>
-          <input type="text" id="word-input" />
-          <Clear className="clear" />
+          <input
+            type="text"
+            id="word-input"
+            value={inputWord}
+            onChange={handleInputChange}
+          />
+          <Clear className="clear" onClick={handleClear} />
           <input type="submit" value="Generate slogans" />
         </form>
       </div>

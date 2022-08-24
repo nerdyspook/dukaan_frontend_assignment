@@ -7,3 +7,16 @@
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+
+@media screen and (max-width: 755.5px) {
+  .product_card {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .product_card,
+  .product_card img {
+    max-width: 18rem;
+  }
+}
